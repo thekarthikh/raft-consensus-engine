@@ -1,0 +1,53 @@
+[
+    {
+        "jmhVersion": "1.37",
+        "benchmark": "com.raft.benchmark.RaftLogBenchmark.testLogAppend",
+        "mode": "thrpt",
+        "threads": 1,
+        "forks": 1,
+        "jvmArgs": [
+            "-Xms256m",
+            "-Xmx256m"
+        ],
+        "jdkVersion": "22.0.2",
+        "vmName": "OpenJDK 64-Bit Server VM",
+        "vmVersion": "22.0.2+9-FR",
+        "warmupIterations": 2,
+        "warmupTime": "1 s",
+        "warmupBatchSize": 1,
+        "measurementIterations": 5,
+        "measurementTime": "2 s",
+        "measurementBatchSize": 1,
+        "primaryMetric": {
+            "score": 1198.0870868200304,
+            "scoreError": 233.21379130712128,
+            "scoreConfidence": [
+                964.8732955129092,
+                1431.3008781271517
+            ],
+            "scorePercentiles": {
+                "0.0": 1108.9732186436336,
+                "50.0": 1206.2321330594368,
+                "90.0": 1253.4052873815697,
+                "95.0": 1253.4052873815697,
+                "99.0": 1253.4052873815697,
+                "99.9": 1253.4052873815697,
+                "99.99": 1253.4052873815697,
+                "99.999": 1253.4052873815697,
+                "99.9999": 1253.4052873815697,
+                "100.0": 1253.4052873815697
+            },
+            "scoreUnit": "ops/s",
+            "rawData": [
+                [
+                    1108.9732186436336,
+                    1170.4419424763819,
+                    1253.4052873815697,
+                    1251.3828525391302,
+                    1206.2321330594368
+                ]
+            ]
+        },
+        "secondaryMetrics": {}
+    }
+]
